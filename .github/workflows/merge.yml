@@ -2,8 +2,11 @@ name: Merge Momo Config
 
 on:
   schedule:
-    - cron: "0 0 * * *"  # 每天 0 点 UTC 执行（北京时间 8 点）
-  workflow_dispatch:      # 允许手动触发
+    - cron: "0 0 * * *"  # 每天 0 点 UTC
+  workflow_dispatch:      # 手动触发
+
+permissions:
+  contents: write  # 👈 必须显式授予写权限
 
 jobs:
   build:
@@ -11,6 +14,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}  # 👈 使用自动注入的 token
 
       - name: Set up Python
         uses: actions/setup-python@v5
