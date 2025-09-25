@@ -543,8 +543,8 @@
       {
         "tag": "my_direct",
         "type": "remote",
-        "format": "text",
-        "url": "https://gh-proxy.com/https://raw.githubusercontent.com/manlongdan/rule_set/refs/heads/main/config/direct.txt",
+        "format": "source",
+        "url": "https://gh-proxy.com/https://raw.githubusercontent.com/manlongdan/rule_set/refs/heads/main/config/direct.json",
         "download_detour": "🎯 全球直连"
       }
     ],
