@@ -3,7 +3,7 @@ import urllib.request
 
 # 两个远程文件 URL
 URLS = [
-    "https://raw.githubusercontent.com/qichiyuhub/rule/refs/heads/main/config/singbox/1.12.x/config.json",
+    "https://raw.githubusercontent.com/manlongdan/rule_set/refs/heads/main/config/config.json",
     "https://raw.githubusercontent.com/manlongdan/rule_set/refs/heads/main/config/my_sub_momo.json"
 ]
 
